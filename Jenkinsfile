@@ -4,7 +4,7 @@ pipeline {
         stage("Copy file to Docker server"){
             steps {
 				//แก้ตรง longtest ให้เป็นชื่อเดียวกับ pipeline job/item ที่สร้างใน jenkins
-                sh "scp -r /var/lib/jenkins/workspace/longtest/* root@43.208.49.150:~/longtest"
+                sh "scp -r /var/lib/jenkins/workspace/longtest/* root@43.208.241.236:~/longtest"
             }
         }
         
